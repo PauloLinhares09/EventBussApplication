@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //Listener for all calling : EventBus.getDefault.post(...)
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(MyMessage message){
         Log.i("Main", message.getMessage());
